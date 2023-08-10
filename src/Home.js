@@ -13,6 +13,9 @@ function Home() {
   return (
     <>
       <ListGroup as="ol" numbered>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/input-array-mathod')}>Input Array Mathod</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/input-array-mathod-two')}>Input Array Mathod Two</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/input-table-task')}>Input Table Task</ListGroup.Item>
         <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/appointment-form')}>Appointment Form</ListGroup.Item>
         <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/card-deling')}>Card-Deling</ListGroup.Item>
         <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/increment-task')}>Increment Task</ListGroup.Item>

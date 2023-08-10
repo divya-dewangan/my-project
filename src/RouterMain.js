@@ -35,12 +35,18 @@ import PropsDeling from './PropsDeling'
 import CardDeleing from './CardDeleing'
 import IncrementTask from './IncrementTask'
 import AppointmentForm from './AppointmentForm'
+import InputTableTask from './InputTableTask'
+import InputArrayMathod from './InputArrayMathod'
+import InputArrayMathodTwo from './InputArrayMathodTwo'
 function RouterMain() {
     return (
         <BrowserRouter>
             <RouterNewbar />
             <Routes>
 
+                <Route path='/input-array-mathod' element={<InputArrayMathod />} />
+                <Route path='/input-array-mathod-two' element={<InputArrayMathodTwo />} />
+                <Route path='/input-table-task' element={<InputTableTask />} />
                 <Route path='/appointment-form' element={<AppointmentForm />} />
                 <Route path='/increment-task' element={<IncrementTask />} />
                 <Route path='/card-deling' element={<CardDeleing />} />
