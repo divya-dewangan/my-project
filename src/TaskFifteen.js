@@ -12,11 +12,10 @@ function TaskFifteen() {
 
                     <>
 
-                        <Card style={{ width: '18rem' , margin:'10px' }} bg='primary'>
+                        <Card style={{ width: '18rem' , margin:'10px' }} bg='primary' key={index}>
                             <Card.Body >
                                 <Card.Text
                                     variant={itam}
-                                    key={index}
                                     className=' fs-1 m-2 '
                                 >
                                     {itam}</Card.Text>

@@ -13,6 +13,12 @@ function Home() {
   return (
     <>
       <ListGroup as="ol" numbered>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/local-storage')}>Local Storge</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/state-updatet')}>State Updatet</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/rendom-no-task')}>Rendom no Task</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/ternary-opperater')}>Ternary Opperater</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/bulb-on-off-task')}>Bulb On Off Task</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/props-input-task')}>Props Input Task</ListGroup.Item>
         <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/input-array-mathod')}>Input Array Mathod</ListGroup.Item>
         <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/input-array-mathod-two')}>Input Array Mathod Two</ListGroup.Item>
         <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/input-table-task')}>Input Table Task</ListGroup.Item>

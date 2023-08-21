@@ -6,14 +6,15 @@ function UseEffectTaskOne() {
 
 
     const nameHandlar = (e) => {
+        console.log(e.target.value)
         setName(e.target.value)
 
     }
 
     useEffect(() => {
-        if(name === "abcd"){
+        // if(name === "abcd"){
+        // }
         console.log('useEffect calling....',name)
-        }
 
     }, [name])
 

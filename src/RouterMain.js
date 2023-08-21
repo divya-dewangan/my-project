@@ -38,12 +38,24 @@ import AppointmentForm from './AppointmentForm'
 import InputTableTask from './InputTableTask'
 import InputArrayMathod from './InputArrayMathod'
 import InputArrayMathodTwo from './InputArrayMathodTwo'
+import PropsInputTask from './PropsInputTask'
+import BulbOnOffTask from './BulbOnOffTask'
+import TernaryOpperater from './TernaryOpperater'
+import RendomNoTask from './RendomNoTask'
+import StateUpdatet from './StateUpdatet'
+import LocalStorage from './LocalStorage'
 function RouterMain() {
     return (
         <BrowserRouter>
             <RouterNewbar />
             <Routes>
 
+                <Route path='/local-storage' element={<LocalStorage />} />
+                <Route path='/state-updatet' element={<StateUpdatet />} />
+                <Route path='/rendom-no-task' element={<RendomNoTask />} />
+                <Route path='/ternary-opperater' element={<TernaryOpperater />} />
+                <Route path='/bulb-on-off-task' element={<BulbOnOffTask />} />
+                <Route path='/props-input-task' element={<PropsInputTask />} />
                 <Route path='/input-array-mathod' element={<InputArrayMathod />} />
                 <Route path='/input-array-mathod-two' element={<InputArrayMathodTwo />} />
                 <Route path='/input-table-task' element={<InputTableTask />} />

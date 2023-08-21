@@ -1,7 +1,7 @@
 import React from 'react'
 import ButtonComponents from './ReusableComponent/ButtonComponents'
 
-function PropsDeling() {
+function PropsDeling() {                         
   return (
     <>
     <ButtonComponents variant='primary' name='Click'/>
