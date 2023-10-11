@@ -1,22 +1,20 @@
 import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card';
 function NameTask() {
-
     const [name, setName] = useState("")
-
     const [listItem, setListItem] = useState([])
 
+    
+    const nameChangeHandler = (e) => {
+        // console.log("Data:::", e.target.value) //zys
+        setName(e.target.value)
+    }
+    
     const addHandler = () => {
         // console.log("listItem", listItem)
         setListItem(prev => ([...prev, name])) // push the value in array
         setName("") //empty input box
     }
-
-    const nameChangeHandler = (e) => {
-        // console.log("Data:::", e.target.value) //zys
-        setName(e.target.value)
-    }
-
     return (
         <>
             <div className='d-flex justify-content-center my-3'>

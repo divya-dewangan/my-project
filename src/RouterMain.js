@@ -44,12 +44,34 @@ import TernaryOpperater from './TernaryOpperater'
 import RendomNoTask from './RendomNoTask'
 import StateUpdatet from './StateUpdatet'
 import LocalStorage from './LocalStorage'
+import ColorDisplayMap from './ColorDisplayMap'
+import CardDisplayMapTask from './CardDisplayMapTask'
+import TwoInputInOne from './TwoInputInOne'
+import IncrementTaskTwo from './IncrementTaskTwo'
+import InputMapTask from './PracticeTask/InputMapTask'
+import UrlTask from './PracticeTask/UrlTask'
+import TodoTask from './PracticeTask/TodoTask'
+import GroceryStore from './PracticeTask/GroceryStore'
+import GroceryValidation from './PracticeTask/GroceryValidation'
+import ThambnilTask from './PracticeTask/ThambnilTask'
+import Table from './PracticeTask/Table'
 function RouterMain() {
     return (
         <BrowserRouter>
             <RouterNewbar />
             <Routes>
 
+                <Route path='/table' element={<Table />} />
+                <Route path='/thambnil-task' element={<ThambnilTask />} />
+                <Route path='/grocery-validation' element={<GroceryValidation />} />
+                <Route path='/grocery-store' element={<GroceryStore />} />
+                <Route path='/todo-task' element={<TodoTask />} />
+                <Route path='/url-task' element={<UrlTask />} />
+                <Route path='/input-map-task' element={<InputMapTask />} />
+                <Route path='/increment-task-two' element={<IncrementTaskTwo />} />
+                <Route path='/two-input-in-one' element={<TwoInputInOne />} />
+                <Route path='/card-display-map' element={<CardDisplayMapTask />} />
+                <Route path='/color-display-map' element={<ColorDisplayMap />} />
                 <Route path='/local-storage' element={<LocalStorage />} />
                 <Route path='/state-updatet' element={<StateUpdatet />} />
                 <Route path='/rendom-no-task' element={<RendomNoTask />} />

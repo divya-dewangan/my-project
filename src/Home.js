@@ -13,6 +13,17 @@ function Home() {
   return (
     <>
       <ListGroup as="ol" numbered>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/table')}>Table Task</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/thambnil-task')}>Thambnil Task</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/grocery-validation')}>Grocery Validation</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/grocery-store')}>Grocery Store</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/todo-task')}>Todo Task </ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/url-task')}>Url Task </ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/input-map-task')}>Input Map Task </ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/increment-task-two')}>Increment Task Two</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/two-input-in-one')}>Two input in one</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/card-display-map')}>Card Display Map</ListGroup.Item>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/color-display-map')}>Color Display Map</ListGroup.Item>
         <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/local-storage')}>Local Storge</ListGroup.Item>
         <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/state-updatet')}>State Updatet</ListGroup.Item>
         <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/rendom-no-task')}>Rendom no Task</ListGroup.Item>
