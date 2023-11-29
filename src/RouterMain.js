@@ -55,12 +55,14 @@ import GroceryStore from './PracticeTask/GroceryStore'
 import GroceryValidation from './PracticeTask/GroceryValidation'
 import ThambnilTask from './PracticeTask/ThambnilTask'
 import Table from './PracticeTask/Table'
+import TabTask from './PracticeTask/TabTask'
 function RouterMain() {
     return (
         <BrowserRouter>
             <RouterNewbar />
             <Routes>
 
+                <Route path='/tab-task' element={<TabTask />} />
                 <Route path='/table' element={<Table />} />
                 <Route path='/thambnil-task' element={<ThambnilTask />} />
                 <Route path='/grocery-validation' element={<GroceryValidation />} />

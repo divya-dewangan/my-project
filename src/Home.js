@@ -13,6 +13,7 @@ function Home() {
   return (
     <>
       <ListGroup as="ol" numbered>
+        <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/tab-task')}>TabTask</ListGroup.Item>
         <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/table')}>Table Task</ListGroup.Item>
         <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/thambnil-task')}>Thambnil Task</ListGroup.Item>
         <ListGroup.Item as="li" className='mx-5' onClick={() => redirectTo('/grocery-validation')}>Grocery Validation</ListGroup.Item>

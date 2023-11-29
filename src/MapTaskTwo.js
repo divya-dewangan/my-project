@@ -1,52 +1,45 @@
 import React, { useState } from 'react'
 
 function MapTaskTwo() {
-    const [name, setName] = useState('')
-    const [age, setAge] = useState('')
-    const [address, setAddress] = useState('')
-    const [flag, setFlag] = useState(false)
+    const [name, setName] = useState("")
+    const [age, setAge] = useState("")
+    const [mono, setMono] = useState("")
+    const [vlaue, setValue] = useState(false)
 
-
-    const nameChange = (e) => {
+    const nameHandler = (e) => {
         setName(e.target.value)
     }
-    const ageChange = (e) => {
+
+    const ageHandler = (e) => {
         setAge(e.target.value)
     }
-    const addressChange = (e) => {
-        setAddress(e.target.value)
+
+    const monoHandler = (e) => {
+        setMono(e.target.value)
     }
-    const submitHandlar = () => {
-        // 
-        console.log('Submit call')
-        setFlag(prev => !prev);
-        // setFlag(!flag);
-        // setName("")
-        // setAge("")
-        // setAddress("")
 
-
+    const submitHandler = () => {
+        setValue(prev => !prev)
     }
     return (
         <>
             <div className='row'>
-                <div className='col-6 text-center'>
-                    <h1>Form</h1>
-                    <div className='text center'>
-                        <input className='form-control mb-3 w-50' type='input' placeholder='Enter your name ' onChange={nameChange}></input>
-                        <input className='form-control mb-3 w-50' type='input' placeholder='Enter your Age' onChange={ageChange}></input>
-                        <input className='form-control mb-3 w-50' type='input' placeholder='Enter your Address' onChange={addressChange}></input>
-                        <button className='btn btn-info ' onClick={() =>submitHandlar()}>Submit</button>
-                    </div>
+                <div className='col-md-6'>
+                    <div className='fs-3 p-3'>INPUT</div>
+                    <input type='text' placeholder='Enter your name' value={name} onChange={nameHandler} className='form-control w-25 my-2' />
+                    <input type='text' placeholder='Enter your Age' value={age} onChange={ageHandler} className='form-control w-25 my-2' />
+                    <input type='text' placeholder='Enter your Mo.No' value={mono} onChange={monoHandler} className='form-control w-25 my-2' />
+                    <buton className='btn btn-info' onClick={submitHandler} >Submit</buton>
                 </div>
-                <div className='col-6 text-center'>
-                    <h1>Output</h1>
-                    {flag &&
-                        <>
-                            <div>{name}</div>
-                            <div>{age}</div>
-                            <div>{address}</div>
-                        </>}
+                <div className='col-md-6'>
+                    <div className='fs-3 p-3'>OUTPUT</div>
+                   {vlaue &&
+                   <>
+                    <div>{name}</div>
+                    <div>{age}</div>
+                    <div>{mono}</div>
+                    </>
+                   }
                 </div>
             </div>
         </>
